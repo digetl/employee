@@ -8,4 +8,6 @@ public class Manager extends Employee {
         super(name, niNumber, salary);
         this.deptName = deptName;
     };
+
+
 }

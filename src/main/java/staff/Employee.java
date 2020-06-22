@@ -12,6 +12,11 @@ public abstract class Employee {
     };
 
     public String getName() {
-        return this.name;
+        return name;
     };
+
+    public String getNINumber() {
+        return niNumber;
+    }
+
 }

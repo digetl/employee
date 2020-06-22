@@ -19,6 +19,6 @@ public class ManagerTest {
 
     @Test
     public void managerHasNINumber() {
-        assertEquals("723BHIO", manager.getNINUmber());
+        assertEquals("723BHIO", manager.getNINumber());
     }
 }
