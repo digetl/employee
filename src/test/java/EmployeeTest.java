@@ -1,6 +1,7 @@
 import org.junit.Test;
 import staff.Employee;
 import staff.Manager;
+import staff.techStaff.Developer;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,6 +20,13 @@ public class EmployeeTest {
         employee = new Manager("Colin", "123ABC", 10000, "CodeClan");
         assertEquals(100, employee.getBonus(), 0.2);
     }
+
+    @Test
+    public void canGetDeveloperName() {
+    employee = new Developer("Eugene", "123ABC", 12000);
+    assertEquals("Eugene", employee.getName());
+    }
+
 
 
 }
