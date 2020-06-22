@@ -14,5 +14,11 @@ public class EmployeeTest {
         assertEquals(11000, employee.raiseSalary(1.10),0.2) ;
     }
 
+    @Test
+    public void canGetBonus() {
+        employee = new Manager("Colin", "123ABC", 10000, "CodeClan");
+        assertEquals(100, employee.getBonus());
+    }
+
 
 }
