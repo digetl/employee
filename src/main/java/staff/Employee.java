@@ -23,4 +23,8 @@ public abstract class Employee {
         return salary;
     }
 
+    public Double raiseSalary(Double amount) {
+        return salary * amount;
+    }
+
 }

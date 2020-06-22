@@ -11,7 +11,7 @@ public class EmployeeTest {
     @Test
     public void canRaiseSalary() {
         employee = new Manager("Colin", "123ABC", 10000, "CodeClan");
-        assertEquals(0.10, employee.raiseSalary());
+        assertEquals(11000, employee.raiseSalary(1.10),0.2) ;
     }
 
 
