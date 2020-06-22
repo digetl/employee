@@ -26,4 +26,9 @@ public class ManagerTest {
     public void managerHasSalary() {
         assertEquals(75000, manager.getSalary());
     }
+
+    @Test
+    public void managerHasDeptName() {
+        assertEquals("Cyber Security", manager.getDeptName());
+    }
 }
