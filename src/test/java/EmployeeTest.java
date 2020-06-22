@@ -1,6 +1,6 @@
 import org.junit.Test;
 import staff.Employee;
-import staff.Manager;
+import staff.management.Manager;
 import staff.techStaff.DatabaseAdmin;
 import staff.techStaff.Developer;
 
