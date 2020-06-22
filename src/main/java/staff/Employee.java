@@ -27,4 +27,8 @@ public abstract class Employee {
         return salary * amount;
     }
 
+    public Double getBonus() {
+        return salary * 0.01;
+    }
+
 }
