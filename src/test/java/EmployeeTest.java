@@ -1,6 +1,7 @@
 import org.junit.Test;
 import staff.Employee;
 import staff.Manager;
+import staff.techStaff.DatabaseAdmin;
 import staff.techStaff.Developer;
 
 import static org.junit.Assert.assertEquals;
@@ -37,6 +38,24 @@ public class EmployeeTest {
     public void canGetDeveloperSalary() {
         employee = new Developer("Eugene", "125ABC", 14000);
         assertEquals(14000, employee.getSalary());
+    }
+
+    @Test
+    public void canGetDatabaseAdminName() {
+        employee = new DatabaseAdmin("Hannah", "123ABC", 12000);
+        assertEquals("Hannah", employee.getName());
+    }
+
+    @Test
+    public void canGetDatabaseNINumber() {
+        employee = new DatabaseAdmin("Eugene", "126ABC", 12000);
+        assertEquals("126ABC", employee.getNINumber());
+    }
+
+    @Test
+    public void canGetDatabaseSalary() {
+        employee = new DatabaseAdmin("Eugene", "125ABC", 16000);
+        assertEquals(16000, employee.getSalary());
     }
 
 
