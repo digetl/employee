@@ -31,7 +31,12 @@ public class EmployeeTest {
     public void canGetDeveloperNINumber() {
         employee = new Developer("Eugene", "125ABC", 12000);
         assertEquals("125ABC", employee.getNINumber());
+    }
 
+    @Test
+    public void canGetDeveloperSalary() {
+        employee = new Developer("Eugene", "125ABC", 14000);
+        assertEquals(14000, employee.getSalary());
     }
 
 
