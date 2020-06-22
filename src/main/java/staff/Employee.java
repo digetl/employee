@@ -10,4 +10,8 @@ public abstract class Employee {
         this.niNumber = niNumber;
         this.salary = salary;
     };
+
+    public String getName() {
+        return this.name;
+    };
 }
