@@ -27,6 +27,12 @@ public class EmployeeTest {
     assertEquals("Eugene", employee.getName());
     }
 
+    @Test
+    public void canGetDeveloperNINumber() {
+        employee = new Developer("Eugene", "125ABC", 12000);
+        assertEquals("125ABC", employee.getNINumber());
+
+    }
 
 
 }
